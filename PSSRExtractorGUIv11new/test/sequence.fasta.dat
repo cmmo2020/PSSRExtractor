@@ -1,0 +1,432 @@
+Assembly: C:\Users\Alejandro\Documents\NetBeansProjects\PSSRExtractorGUIv11new\test\sequence.fasta
+Max Pattern Length= 6
+Aligment's Parameters: Match=2 Mismatch=-7 Indel=-7
+----------------------------------------------------------
+Accession: NC_000023.11:147911951-147951127
+Found Repeats= 26
+----------------------------------------------------------
+Pattern:				agat
+Exact SSR Pos.:			9526
+Exact SSR Copy Number:	4
+Matches:				18
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	9525
+Inexact SSR End Pos.:		9542
+Inexact SSR Copy Number:	4
+Score:				36
+5' Flank:	gtgtgcgtatatatatatat	Entropy(0-2): 1.72185
+3' Flank:	ttgaggttatatttaatcat	Entropy(0-2): 1.64974
+Aligned SSR:				
+atagatagatagatagat
+||||||||||||||||||
+atagatagatagatagat
+--------------------------------------
+Pattern:				attc
+Exact SSR Pos.:			19508
+Exact SSR Copy Number:	3
+Matches:				13
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	19509
+Inexact SSR End Pos.:		19521
+Inexact SSR Copy Number:	3
+Score:				26
+5' Flank:	aaattatttatgctagttgt	Entropy(0-2): 1.64974
+3' Flank:	aattatcaggtctgttgaac	Entropy(0-2): 1.92739
+Aligned SSR:				
+attcattcattca
+|||||||||||||
+attcattcattca
+--------------------------------------
+Pattern:				attt
+Exact SSR Pos.:			14535
+Exact SSR Copy Number:	5
+Matches:				23
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	14533
+Inexact SSR End Pos.:		14555
+Inexact SSR Copy Number:	5
+Score:				46
+5' Flank:	taggtcctgtccttcagttc	Entropy(0-2): 1.8479
+3' Flank:	tttgagatggagtctcactc	Entropy(0-2): 1.96006
+Aligned SSR:				
+tttatttatttatttatttattt
+|||||||||||||||||||||||
+tttatttatttatttatttattt
+--------------------------------------
+Pattern:				attt
+Exact SSR Pos.:			24536
+Exact SSR Copy Number:	3
+Matches:				12
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	24537
+Inexact SSR End Pos.:		24548
+Inexact SSR Copy Number:	3
+Score:				24
+5' Flank:	tgtttttaaaaccaaacttg	Entropy(0-2): 1.80317
+3' Flank:	cttaggcaaagtaataggaa	Entropy(0-2): 1.81649
+Aligned SSR:				
+atttatttattt
+||||||||||||
+atttatttattt
+--------------------------------------
+Pattern:				cgg
+Exact SSR Pos.:			133
+Exact SSR Copy Number:	9
+Matches:				72
+Mismatches:			2
+Insertions/Deletions:		2
+Inexact SSR Start Pos.:	87
+Inexact SSR End Pos.:		161
+Inexact SSR Copy Number:	25
+Score:				116
+5' Flank:	cggaggcgccgctgccaggg	Entropy(0-2): 1.58058
+3' Flank:	tgggcctcgagcgcccgcag	Entropy(0-2): 1.72368
+Aligned SSR:				
+ggcgtgcggcagc-gcggcggcggcggcggcggcggcggcggcggaggcggcggcggcggcggcggcggcggcggc
+|||| |||||*|| |||||||||||||||||||||||||||||||*||||||||||||||||||||||||||||||
+ggcg-gcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggcggc
+--------------------------------------
+Pattern:				at
+Exact SSR Pos.:			9512
+Exact SSR Copy Number:	7
+Matches:				16
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	9512
+Inexact SSR End Pos.:		9527
+Inexact SSR Copy Number:	8
+Score:				32
+5' Flank:	ttagtatatttgtgtgtgcg	Entropy(0-2): 1.64974
+3' Flank:	gatagatagatagatttgag	Entropy(0-2): 1.57667
+Aligned SSR:				
+tatatatatatatata
+||||||||||||||||
+tatatatatatatata
+--------------------------------------
+Pattern:				at
+Exact SSR Pos.:			12552
+Exact SSR Copy Number:	7
+Matches:				15
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	12552
+Inexact SSR End Pos.:		12566
+Inexact SSR Copy Number:	7
+Score:				30
+5' Flank:	tgtgtgtgtgtgtgtgtgtc	Entropy(0-2): 1.24105
+3' Flank:	ttttttttttttaaagacag	Entropy(0-2): 1.49277
+Aligned SSR:				
+tatatatatatatat
+|||||||||||||||
+tatatatatatatat
+--------------------------------------
+Pattern:				at
+Exact SSR Pos.:			27322
+Exact SSR Copy Number:	7
+Matches:				14
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	27323
+Inexact SSR End Pos.:		27336
+Inexact SSR Copy Number:	7
+Score:				28
+5' Flank:	tgttttttttttccctctta	Entropy(0-2): 1.25963
+3' Flank:	gggctaggagtacagacatt	Entropy(0-2): 1.92739
+Aligned SSR:				
+atatatatatatat
+||||||||||||||
+atatatatatatat
+--------------------------------------
+Pattern:				gt
+Exact SSR Pos.:			1074
+Exact SSR Copy Number:	6
+Matches:				13
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	1074
+Inexact SSR End Pos.:		1086
+Inexact SSR Copy Number:	6
+Score:				26
+5' Flank:	cagcgctgctacttaaaaat	Entropy(0-2): 1.94188
+3' Flank:	ttaagtttccaaagacctaa	Entropy(0-2): 1.8479
+Aligned SSR:				
+tgtgtgtgtgtgt
+|||||||||||||
+tgtgtgtgtgtgt
+--------------------------------------
+Pattern:				gt
+Exact SSR Pos.:			12518
+Exact SSR Copy Number:	16
+Matches:				33
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	12518
+Inexact SSR End Pos.:		12550
+Inexact SSR Copy Number:	16
+Score:				66
+5' Flank:	ttgtctttcagtattttatt	Entropy(0-2): 1.48101
+3' Flank:	ctatatatatatatattttt	Entropy(0-2): 1.19498
+Aligned SSR:				
+tgtgtgtgtgtgtgtgtgtgtgtgtgtgtgtgt
+|||||||||||||||||||||||||||||||||
+tgtgtgtgtgtgtgtgtgtgtgtgtgtgtgtgt
+--------------------------------------
+Pattern:				a
+Exact SSR Pos.:			27952
+Exact SSR Copy Number:	19
+Matches:				19
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	27953
+Inexact SSR End Pos.:		27971
+Inexact SSR Copy Number:	19
+Score:				38
+5' Flank:	gaataaaaagaccctgtctc	Entropy(0-2): 1.905
+3' Flank:	gaggcggaggcgggcggatc	Entropy(0-2): 1.53537
+Aligned SSR:				
+aaaaaaaaaaaaaaaaaaa
+|||||||||||||||||||
+aaaaaaaaaaaaaaaaaaa
+--------------------------------------
+Pattern:				a
+Exact SSR Pos.:			28210
+Exact SSR Copy Number:	19
+Matches:				43
+Mismatches:			3
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	28211
+Inexact SSR End Pos.:		28256
+Inexact SSR Copy Number:	46
+Score:				65
+5' Flank:	acagagcgagactccgtctc	Entropy(0-2): 1.94188
+3' Flank:	ttttgatcaggataaagcct	Entropy(0-2): 1.92739
+Aligned SSR:				
+aaaaaaaaaaaaaaaaaaacaaaaaagaaaaaaaaaaaagaaaaaa
+|||||||||||||||||||*||||||*||||||||||||*||||||
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+--------------------------------------
+Pattern:				a
+Exact SSR Pos.:			35462
+Exact SSR Copy Number:	15
+Matches:				15
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	35463
+Inexact SSR End Pos.:		35477
+Inexact SSR Copy Number:	15
+Score:				30
+5' Flank:	caagagcaaaacaccatctc	Entropy(0-2): 1.71465
+3' Flank:	gggccaggcacggtggcgca	Entropy(0-2): 1.64974
+Aligned SSR:				
+aaaaaaaaaaaaaaa
+|||||||||||||||
+aaaaaaaaaaaaaaa
+--------------------------------------
+Pattern:				a
+Exact SSR Pos.:			35759
+Exact SSR Copy Number:	15
+Matches:				15
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	35760
+Inexact SSR End Pos.:		35774
+Inexact SSR Copy Number:	15
+Score:				30
+5' Flank:	acagagcgagactgtctggg	Entropy(0-2): 1.905
+3' Flank:	gatacaaatcaaagtactga	Entropy(0-2): 1.78698
+Aligned SSR:				
+aaaaaaaaaaaaaaa
+|||||||||||||||
+aaaaaaaaaaaaaaa
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			1160
+Exact SSR Copy Number:	10
+Matches:				10
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	1161
+Inexact SSR End Pos.:		1170
+Inexact SSR Copy Number:	10
+Score:				20
+5' Flank:	agtatattattactagggca	Entropy(0-2): 1.85823
+3' Flank:	aactgagcgaaaatattttt	Entropy(0-2): 1.80317
+Aligned SSR:				
+tttttttttt
+||||||||||
+tttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			6605
+Exact SSR Copy Number:	25
+Matches:				25
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	6606
+Inexact SSR End Pos.:		6630
+Inexact SSR Copy Number:	25
+Score:				50
+5' Flank:	cattcagagcctgcaaaagc	Entropy(0-2): 1.92739
+3' Flank:	gaatagctacagcacttgca	Entropy(0-2): 1.96006
+Aligned SSR:				
+ttttttttttttttttttttttttt
+|||||||||||||||||||||||||
+ttttttttttttttttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			12565
+Exact SSR Copy Number:	13
+Matches:				13
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	12566
+Inexact SSR End Pos.:		12578
+Inexact SSR Copy Number:	13
+Score:				26
+5' Flank:	tgtgtctatatatatatata	Entropy(0-2): 1.58058
+3' Flank:	aaagacaggatctcactctg	Entropy(0-2): 1.96006
+Aligned SSR:				
+ttttttttttttt
+|||||||||||||
+ttttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			12724
+Exact SSR Copy Number:	15
+Matches:				15
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	12725
+Inexact SSR End Pos.:		12739
+Inexact SSR Copy Number:	15
+Score:				30
+5' Flank:	gcacataccactgcacctaa	Entropy(0-2): 1.80317
+3' Flank:	aataatttgttgtaaagatc	Entropy(0-2): 1.68614
+Aligned SSR:				
+ttttttttttttttt
+|||||||||||||||
+ttttttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			17976
+Exact SSR Copy Number:	11
+Matches:				11
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	17977
+Inexact SSR End Pos.:		17987
+Inexact SSR Copy Number:	11
+Score:				22
+5' Flank:	ttggtaattattcatcttaa	Entropy(0-2): 1.68728
+3' Flank:	aaatttctaggtgtgccaaa	Entropy(0-2): 1.92739
+Aligned SSR:				
+ttttttttttt
+|||||||||||
+ttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			22255
+Exact SSR Copy Number:	12
+Matches:				16
+Mismatches:			1
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	22251
+Inexact SSR End Pos.:		22267
+Inexact SSR Copy Number:	17
+Score:				25
+5' Flank:	ggaaaaagagctggtagttg	Entropy(0-2): 1.7412
+3' Flank:	aatagcaaatgagtagagaa	Entropy(0-2): 1.60308
+Aligned SSR:				
+ttttgtttttttttttt
+||||*||||||||||||
+ttttttttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			27304
+Exact SSR Copy Number:	10
+Matches:				10
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	27305
+Inexact SSR End Pos.:		27314
+Inexact SSR Copy Number:	10
+Score:				20
+5' Flank:	cttgtgacaagaagtagttg	Entropy(0-2): 1.89684
+3' Flank:	ccctcttaatatatatatat	Entropy(0-2): 1.5187
+Aligned SSR:				
+tttttttttt
+||||||||||
+tttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			27642
+Exact SSR Copy Number:	10
+Matches:				10
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	27643
+Inexact SSR End Pos.:		27652
+Inexact SSR Copy Number:	10
+Score:				20
+5' Flank:	cccttggtatttcattttga	Entropy(0-2): 1.78698
+3' Flank:	aagaatttgatcggccaggc	Entropy(0-2): 1.97212
+Aligned SSR:				
+tttttttttt
+||||||||||
+tttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			32865
+Exact SSR Copy Number:	14
+Matches:				14
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	32866
+Inexact SSR End Pos.:		32879
+Inexact SSR Copy Number:	14
+Score:				28
+5' Flank:	ggaagcttctgttaaccctc	Entropy(0-2): 1.97212
+3' Flank:	aaagtcagacaatggtatat	Entropy(0-2): 1.81649
+Aligned SSR:				
+tttttttttttttt
+||||||||||||||
+tttttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			37835
+Exact SSR Copy Number:	11
+Matches:				11
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	37836
+Inexact SSR End Pos.:		37846
+Inexact SSR Copy Number:	11
+Score:				22
+5' Flank:	gaccaattttaacttagagc	Entropy(0-2): 1.92739
+3' Flank:	aattttgtctgccccaagtt	Entropy(0-2): 1.905
+Aligned SSR:				
+ttttttttttt
+|||||||||||
+ttttttttttt
+--------------------------------------
+Pattern:				t
+Exact SSR Pos.:			38132
+Exact SSR Copy Number:	10
+Matches:				10
+Mismatches:			0
+Insertions/Deletions:		0
+Inexact SSR Start Pos.:	38133
+Inexact SSR End Pos.:		38142
+Inexact SSR Copy Number:	10
+Score:				20
+5' Flank:	ttggttttgttttttgagtc	Entropy(0-2): 1.3389
+3' Flank:	aagtgaaatttattgaggaa	Entropy(0-2): 1.54525
+Aligned SSR:				
+tttttttttt
+||||||||||
+tttttttttt
+--------------------------------------

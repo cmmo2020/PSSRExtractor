@@ -1,0 +1,49 @@
+# blastn
+# Iteration: 0
+# Query: NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94
+# RID: 3KBWXK0C014
+# Database: nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 40 hits found
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047258.1	100.000	20	0	0	1	20	1116084	1116103	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047258.1	100.000	20	0	0	41	60	1116130	1116149	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047163.1	100.000	20	0	0	1	20	1113313	1113332	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047163.1	100.000	20	0	0	41	60	1113359	1113378	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047164.1	100.000	20	0	0	1	20	1113838	1113857	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP047164.1	100.000	20	0	0	41	60	1113884	1113903	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046728.1	100.000	20	0	0	1	20	1111555	1111574	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046728.1	100.000	20	0	0	41	60	1111601	1111620	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046529.1	100.000	20	0	0	1	20	1111879	1111898	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046529.1	100.000	20	0	0	41	60	1111925	1111944	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046308.1	100.000	20	0	0	1	20	4206472	4206491	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046308.1	100.000	20	0	0	41	60	4206518	4206537	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046309.1	100.000	20	0	0	1	20	3627707	3627726	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP046309.1	100.000	20	0	0	41	60	3627753	3627772	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP045962.1	100.000	20	0	0	1	20	1114250	1114269	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP045962.1	100.000	20	0	0	41	60	1114296	1114315	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	LR699570.1	100.000	20	0	0	1	20	1112607	1112626	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	LR699570.1	100.000	20	0	0	41	60	1112653	1112672	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP044345.1	100.000	20	0	0	1	20	3884667	3884686	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP044345.1	100.000	20	0	0	41	60	3884713	3884732	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP040832.1	100.000	20	0	0	1	20	1113382	1113401	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP040832.1	100.000	20	0	0	41	60	1113428	1113447	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP041207.1	100.000	20	0	0	1	20	1118957	1118976	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP041207.1	100.000	20	0	0	41	60	1119003	1119022	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP039850.1	100.000	20	0	0	1	20	1113723	1113742	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP039850.1	100.000	20	0	0	41	60	1113769	1113788	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP039851.1	100.000	20	0	0	1	20	1113839	1113858	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP039851.1	100.000	20	0	0	41	60	1113885	1113904	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	LR027516.1	100.000	20	0	0	1	20	1126953	1126972	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	LR027516.1	100.000	20	0	0	41	60	1126999	1127018	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP033311.1	100.000	20	0	0	1	20	1188449	1188468	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP033311.1	100.000	20	0	0	41	60	1188495	1188514	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP033310.1	100.000	20	0	0	1	20	1188464	1188483	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP033310.1	100.000	20	0	0	41	60	1188510	1188529	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP029065.1	100.000	20	0	0	1	20	1104075	1104094	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP029065.1	100.000	20	0	0	41	60	1104121	1104140	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP019613.1	100.000	20	0	0	1	20	3000221	3000240	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP019613.1	100.000	20	0	0	41	60	3000267	3000286	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP019612.1	100.000	20	0	0	1	20	987386	987405	0.22	37.4
+NZ_CP023633.1|aatacg[1112832-1112851]|c:3|s:40|m:20|mm:0|i:0|ina:0|5f:gacccggaggccgacccggt|5e:1.69|3f:tcgaggacacctgcggtttg|3e:1.94	CP019612.1	100.000	20	0	0	41	60	987432	987451	0.22	37.4
+
+
