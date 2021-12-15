@@ -17,7 +17,7 @@ import java.util.List;
  *
  */
 public class StringSearchable implements Searchable<String,String>{
-    private List<String> terms = new ArrayList<>();
+    private final List<String> terms = new ArrayList<>();
   
     /**
      * Constructs a new object based upon the parameter terms.

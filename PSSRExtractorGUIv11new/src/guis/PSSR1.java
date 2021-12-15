@@ -26,7 +26,7 @@ import javax.swing.UIManager;
 
 
 public class PSSR1 extends javax.swing.JFrame {
-   private StringSearchable searchable; 
+   private final StringSearchable searchable; 
    private String MIDAS_Last;
    private File PSSR_Last;
    private BlastRequestWorker blast;
@@ -35,11 +35,9 @@ public class PSSR1 extends javax.swing.JFrame {
          
          ArrayList<String> terms = new ArrayList();
         try {
-         BufferedInputStream bis = new BufferedInputStream( new FileInputStream("taxdb.ser"));
-         ObjectInputStream ois = new ObjectInputStream(bis);
-         terms = (ArrayList<String>) ois.readObject();
-         ois.close();
-         bis.close();
+             try (BufferedInputStream bis = new BufferedInputStream( new FileInputStream("taxdb.ser")); ObjectInputStream ois = new ObjectInputStream(bis)) {
+                 terms = (ArrayList<String>) ois.readObject();
+             }
         } catch (IOException | ClassNotFoundException e) {
             textArea2.append("Taxonomic DB not found!");
         }
@@ -172,6 +170,7 @@ public class PSSR1 extends javax.swing.JFrame {
 
         jFrame1.setTitle("Proxy Config");
         jFrame1.setAlwaysOnTop(true);
+        jFrame1.setIconImage(getIconImage());
         jFrame1.setLocationByPlatform(true);
         jFrame1.setResizable(false);
 
@@ -407,6 +406,8 @@ public class PSSR1 extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/ar_dfkt.gif"))); // NOI18N
         jButton3.setText("Cancel Request");
         jButton3.setEnabled(false);
+        jButton3.setMaximumSize(new java.awt.Dimension(97, 23));
+        jButton3.setMinimumSize(new java.awt.Dimension(97, 23));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -428,22 +429,21 @@ public class PSSR1 extends javax.swing.JFrame {
                     .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel10))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                        .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(jSpinner4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(jSpinner5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(jLabel11)
-                                .add(jLabel12))
-                            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                                .add(jButton3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .add(jButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .add(jSpinner2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(jTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 390, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(jComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 390, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(jPanel2Layout.createSequentialGroup()
+                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jSpinner4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(jSpinner5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(jLabel11)
+                            .add(jLabel12))
+                        .add(61, 61, 61)
+                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                            .add(jButton3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(jButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .add(jSpinner2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jTextField5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 390, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jComboBox2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 390, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(jSpinner3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 59, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -486,7 +486,7 @@ public class PSSR1 extends javax.swing.JFrame {
                             .add(jSpinner5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                                 .add(jLabel12)
-                                .add(jButton3)))
+                                .add(jButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                         .add(0, 0, Short.MAX_VALUE))
                     .add(textArea2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -650,9 +650,19 @@ public class PSSR1 extends javax.swing.JFrame {
             textArea1.append("DONE!" +'\n');
             textArea1.append("Look for result files (.mfaa .dat .xls) at " + jFileChooser1.getSelectedFile().getParent() +'\n');
             textArea1.append("--------------------------------------------------------"  +'\n');
-            MIDAS_Last =jFileChooser1.getSelectedFile().getAbsolutePath() + ".xls";
-            jTextField5.setText(jFileChooser1.getSelectedFile().getAbsolutePath()+".mfaa");
             
+            File[] files=jFileChooser1.getSelectedFile().getParentFile().listFiles();
+            
+            for (int i = files.length-1; i >= 0; i--) {
+                
+                if(files[i].getAbsolutePath().contains(jTextField1.getText()) && files[i].getAbsolutePath().contains(".xls"))
+                    MIDAS_Last = files[i].getAbsolutePath();
+                else if(files[i].getAbsolutePath().contains(jTextField1.getText()) && files[i].getAbsolutePath().contains(".mfaa")){
+                    
+                    jTextField5.setText(files[i].getAbsolutePath());
+                    break;
+                }
+            }
         }
         else
         {
@@ -746,7 +756,6 @@ public class PSSR1 extends javax.swing.JFrame {
              jButton1.setEnabled(false);
              jButton3.setEnabled(true);
            
-                String data = " ";
                 try {
                     blast=new BlastRequestWorker(textArea2, jButton1, jButton3,jComboBox2.getSelectedItem().toString(),
                         Integer.parseInt(jSpinner2.getValue().toString()),
@@ -755,12 +764,12 @@ public class PSSR1 extends javax.swing.JFrame {
                         Float.parseFloat(jSpinner5.getValue().toString()),
                         jTextField5.getText());
                     blast.execute();
-                    String File_AP = jFileChooser2.getSelectedFile().getParent() + "\\results_";
+                    String File_AP = jFileChooser2.getSelectedFile().getParent() + File.separator +"results_";
                     String File_name = jFileChooser2.getSelectedFile().getName();
                     String File_w_ext = File_name.substring(0, File_name.lastIndexOf(".mfaa")) ;
                     PSSR_Last = new File(File_AP + File_w_ext);
 
-                } catch (Exception ex) {
+                } catch (NumberFormatException ex) {
                     Logger.getLogger(PSSR1.class.getName()).log(Level.SEVERE, null, ex);
                 }        
         }
@@ -866,26 +875,22 @@ public class PSSR1 extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PSSR1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PSSR1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PSSR1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(PSSR1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+       //</editor-fold>
+       //</editor-fold>
+       //</editor-fold>
+       //</editor-fold>
+       
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new PSSR1().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new PSSR1().setVisible(true);
         });
     }
     

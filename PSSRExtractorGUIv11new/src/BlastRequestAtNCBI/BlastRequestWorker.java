@@ -79,7 +79,7 @@ public class BlastRequestWorker extends SwingWorker< String, String >{
                 seq += s.next() + '\n';
                 if (count == 200) {seq_array.add(seq); seq = ""; count=0;}
             }
-            if (seq != "") seq_array.add(seq);
+            if (!"".equals(seq)) seq_array.add(seq);
             
         } catch (FileNotFoundException ex) {
             ex.getMessage();
@@ -95,9 +95,9 @@ public class BlastRequestWorker extends SwingWorker< String, String >{
         int minutes = calendar.get(Calendar.MINUTE);
         int seconds = calendar.get(Calendar.SECOND);
         logsTextArea.append("Start Time: " + hour + "h:" + minutes + "m:" + seconds + "s:" + '\n');
-        String fpath_p =jT5.substring(0, jT5.lastIndexOf("\\")) + "\\results_" + jT5.substring(jT5.lastIndexOf("\\")+1, jT5.indexOf(".mfaa"));
-        String fpath_e ="\\"+jT5.substring(jT5.lastIndexOf("\\")+1, jT5.indexOf(".mfaa")) + "_generic_result_"+ jS2 +"_" + jS3 + "_" +  jS4+"_"+jS5+".xls";
-        String fpath_d ="\\"+jT5.substring(jT5.lastIndexOf("\\")+1, jT5.indexOf(".mfaa")) + "_specific_result_"+ jS2 +"_" + jS3 + "_" +  jS4+"_"+jS5+".xls";
+        String fpath_p =jT5.substring(0, jT5.lastIndexOf(File.separator)) + File.separator +"results_" + jT5.substring(jT5.lastIndexOf(File.separator)+1, jT5.indexOf(".mfaa"));
+        String fpath_e =File.separator+jT5.substring(jT5.lastIndexOf(File.separator)+1, jT5.indexOf(".mfaa")) + "_generic_result_"+ jS2 +"_" + jS3 + "_" +  jS4+"_"+jS5+".xls";
+        String fpath_d =File.separator+jT5.substring(jT5.lastIndexOf(File.separator)+1, jT5.indexOf(".mfaa")) + "_specific_result_"+ jS2 +"_" + jS3 + "_" +  jS4+"_"+jS5+".xls";
         String fpath = fpath_p + fpath_e;
         String fpath1 = fpath_p + fpath_d;
         File ftest = new File(fpath);
@@ -267,7 +267,7 @@ public class BlastRequestWorker extends SwingWorker< String, String >{
             sleep(3500);
             try {
                 FileUtils.copyURLToFile(new URL(url), new File("hit_table.htt"), 30000, 30000);
-            }catch(Exception  e){
+            }catch(IOException  e){
                 logsTextArea.append("Problem in retrieving Hit-Table! Retrying" +'\n');
                 logsTextArea.append(e.getMessage() + '\n');
                 rend_excp = true;
@@ -279,33 +279,15 @@ public class BlastRequestWorker extends SwingWorker< String, String >{
             logsTextArea.append("Problem in BLAST job! Retrying..." +'\n');
             rend_excp = true;
         }
-        
-        /*
-        try (BufferedInputStream in = new BufferedInputStream(new URL(url).openStream())){
-        FileOutputStream fileOutputStream = new FileOutputStream("hit_table.htt");
-        byte dataBuffer[] = new byte[1024];
-        int bytesRead;
-        while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
-        fileOutputStream.write(dataBuffer, 0, bytesRead);
-        }
-        fileOutputStream.close();
-        in.close();
-        } catch (IOException e) {
-        tta.append("<exception> Problem in retrieving Hit-Table" +'\n');
-        e.printStackTrace();
-        rend_excp = true;
-        }
-        */
-        // Using Apache Commons-io
-        
+         
         if (rend_excp) {units = null; return units;}
-        BufferedReader  fi=new BufferedReader (new FileReader("hit_table.htt"));
-        String s;
-        
-        while((s=fi.readLine()) != null){
-            stream.add(s);
+        try (BufferedReader fi = new BufferedReader (new FileReader("hit_table.htt"))) {
+            String s;
+            
+            while((s=fi.readLine()) != null){
+                stream.add(s);
+            }
         }
-        fi.close();
         hit_rend = true;
         if (hit_rend){
             
@@ -321,7 +303,7 @@ public class BlastRequestWorker extends SwingWorker< String, String >{
                 logsTextArea.append("Error: "+checkHitTable.substring(1,checkHitTable.indexOf('<'))+'\n');
                 return null;
             }
-            //tta.append("Hit-Table Rendered!" +'\n');
+           
             for(String s1:stream){
                 if(s1.contains("#"))
                 {

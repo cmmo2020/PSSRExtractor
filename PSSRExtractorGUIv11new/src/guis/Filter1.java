@@ -23,14 +23,10 @@ public class Filter1 extends FileFilter{
         int i = s.lastIndexOf('.');
         if (i > 0 && i < s.length() - 1) {
             String extension = s.substring(i+1).toLowerCase();
-            if ("fa".equals(extension) || 
-                "fasta".equals(extension) ||
-                "gbk".equals(extension) ||
-                "gbf".equals(extension) ) {
-                return true;
-            } else {
-                return false;
-            }
+            return "fa".equals(extension) || 
+                    "fasta".equals(extension) ||
+                    "gbk".equals(extension) ||
+                    "gbf".equals(extension);
         }
         return false;
     }

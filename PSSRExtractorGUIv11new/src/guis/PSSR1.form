@@ -132,6 +132,9 @@
       <Properties>
         <Property name="title" type="java.lang.String" value="Proxy Config"/>
         <Property name="alwaysOnTop" type="boolean" value="true"/>
+        <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection component="Form" name="iconImage" type="property"/>
+        </Property>
         <Property name="locationByPlatform" type="boolean" value="true"/>
         <Property name="resizable" type="boolean" value="false"/>
       </Properties>
@@ -606,27 +609,25 @@
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jSpinner4" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jSpinner5" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="114" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jButton3" max="32767" attributes="0"/>
-                                  <Component id="jButton1" max="32767" attributes="0"/>
-                              </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jSpinner4" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              <Component id="jSpinner5" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jSpinner2" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="0" min="-2" pref="390" max="-2" attributes="0"/>
-                          <Component id="jComboBox2" alignment="0" min="-2" pref="390" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jButton3" max="32767" attributes="0"/>
+                              <Component id="jButton1" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
+                      <Component id="jSpinner2" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                      <Component id="jTextField5" alignment="0" min="-2" pref="390" max="-2" attributes="0"/>
+                      <Component id="jComboBox2" alignment="0" min="-2" pref="390" max="-2" attributes="0"/>
                       <Component id="jSpinner3" min="-2" pref="59" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -819,6 +820,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new AutocompleteJComboBox(searchable);"/>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="PSSR1_jComboBox2"/>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
@@ -829,6 +831,12 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Cancel Request"/>
             <Property name="enabled" type="boolean" value="false"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[97, 23]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[97, 23]"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>

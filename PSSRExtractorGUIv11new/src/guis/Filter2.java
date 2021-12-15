@@ -23,11 +23,7 @@ public class Filter2 extends FileFilter{
         int i = s.lastIndexOf('.');
         if (i > 0 && i < s.length() - 1) {
             String extension = s.substring(i+1).toLowerCase();
-            if ("mfaa".equals(extension) ) {
-                return true;
-            } else {
-                return false;
-            }
+            return "mfaa".equals(extension);
         }
         return false;
     }

@@ -13,8 +13,6 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JComboBox;
 import javax.swing.SwingUtilities;
 import javax.swing.event.DocumentEvent;
@@ -53,14 +51,12 @@ public class AutocompleteJComboBox extends JComboBox{
                     update();
                 }
                 public void update(){
-                    SwingUtilities.invokeLater(new Runnable(){
-                        @Override
-                        public void run() {
-                            if (!"".equals(tc.getText())) {
+                    SwingUtilities.invokeLater(() -> {
+                        if (!"".equals(tc.getText())) {
                             List<String> founds = new ArrayList<>(searchable.search(tc.getText()));
                             Set<String> foundSet = new HashSet<>();
-                            for ( String s : founds ){
-                                foundSet.add(s.toLowerCase());
+                            for (String s1 : founds) {
+                                foundSet.add(s1.toLowerCase());
                             }
                             Collections.sort(founds);//sort alphabetically
                             setEditable(false);
@@ -69,15 +65,13 @@ public class AutocompleteJComboBox extends JComboBox{
                             if ( !foundSet.contains( tc.getText().toLowerCase()) ){
                                 addItem( tc.getText() );
                             }
-                            for (String s : founds) {
-                                addItem(s);
+                            for (String s2 : founds) {
+                                addItem(s2);
                             }
                             setEditable(true);
                             setPopupVisible(true);
-                            
                         }
-                            requestFocus();//m
-                        }
+                        requestFocus();//m
                     });
                    
                 }
